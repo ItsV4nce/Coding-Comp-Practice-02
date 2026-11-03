@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+
+        <style>
+            html, body {
+                margin: 0;
+            }
+
+            body {
+                background: linear-gradient(180deg, #00cc6d, #ffff);
+                background-repeat: no-repeat;
+                height: 100vh;
+            }
+
+            /* Top bar */
+            .topbar {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                box-shadow: 0px 4px 4px #1c1c1c63;
+                width: 100%;
+            }
+
+            .brand {
+                margin-left: 1rem;
+                background: linear-gradient(90deg, #00cc6d, #434242);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 2rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+            }
+
+            .btns_array {
+                display: flex;
+                margin-left: auto;
+                margin-right: 1.5rem;
+            }
+
+            .topbar_btns {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 1.2rem;
+                cursor: pointer;
+                margin-left: 1rem;
+            }
+
+            .topbar_btns:hover {
+                text-decoration: underline;
+            }
+
+            /* Misc */
+            .welcome_txt {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #ffff;
+                font-size: 3rem;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            /* Search Bar */
+            .searchbar {
+                display: flex;
+                justify-content: center;
+
+            }
+
+            .search_input {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 2rem;
+                padding: 0.9rem 1.2rem;
+                border-radius: 999px;
+                border: 1px solid #919191;
+                width: 40vw;
+            }
+
+            .search_input:focus {
+                outline: 2px solid #00c04d;
+                border: transparent;
+            }
+
+            .search_btn {
+                background-color: #00c04d;
+                border-radius: 999px;
+                font-size: 2rem;
+                padding: 0.9rem 1.2rem;
+                border: none;
+                width: 8vw;
+                margin-right: 0.5rem;
+                cursor: pointer;
+            }
+
+            .search_btn:active {
+                background-color: #026b2c;
+            }
+
+
+
+            /* Sections */
+            .container_main {
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+            }
+
+            .container_section {
+                background-color: #ffff;
+                width: 30vw;
+                height: 50vh;
+                border-radius: 1rem;
+                margin: 0.5rem;
+            }
+
+            /* Banners */
+            .read_banner {
+                background: linear-gradient(90deg, #0060c0, #434242);
+                border-radius: 1rem;
+                margin: 0.5rem;
+                padding: 1rem;
+                font-size: 2rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                letter-spacing: 0.2rem;
+                color: #ffff;
+            }
+
+            .write_banner {
+                background: linear-gradient(90deg, #bdc000, #434242);
+                border-radius: 1rem;
+                margin: 0.5rem;
+                padding: 1rem;
+                font-size: 2rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                letter-spacing: 0.2rem;
+                color: #ffff;
+            }
+
+            .practice_banner {
+                background: linear-gradient(90deg, #00c04d, #434242);
+                border-radius: 1rem;
+                margin: 0.5rem;
+                padding: 1rem;
+                font-size: 2rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                letter-spacing: 0.2rem;
+                color: #ffff;
+            }
+
+            /* Section contents */
+            .title_txt {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                font-size: 1.5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+            .desc_txt {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 1rem;
+                color: #727272;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header class="topbar">
+            <p class="brand">CodeHelp</p>
+            <div class="btns_array">
+                <a class="topbar_btns">About us &#9660;</a>
+                <a class="topbar_btns">Course &#9660;</a>
+                <a class="topbar_btns">Practice &#9660;</a>
+                <a class="topbar_btns">Community &#9660;</a>
+            </div>
+        </header>
+
+        <p class="welcome_txt">Welcome to CodeHelp! <br> What would you like to learn today?</p>
+        <div class="searchbar">
+            <button class="search_btn">&#128269;</button>
+            <input
+            class="search_input"
+            id="site-search"
+            type="search"
+            id="search"
+            placeholder="Search..."
+            >
+        </div>
+
+        <main class="container_main">
+            <section class="container_section">
+                <p class="read_banner">Read</p>
+                <p class="title_txt">Learn to Read</p>
+                <p class="desc_txt">Code is a language. Start by learning to listen. We teach you how to read documentation, debug existing code, and understand the architecture of great software before you write a single line.</p>
+            </section>
+            <section class="container_section">
+                <p class="write_banner">Write</p>
+                <p class="title_txt">Learn to Write</p>
+                <p class="desc_txt">From 'Hello World' to complex functions. Our guided environment helps you construct code with confidence. Learn the syntax, the structure, and the best practices used by industry pros.</p>
+            </section>
+            <section class="container_section">
+                <p class="practice_banner">Practice</p>
+                <p class="title_txt">Practice</p>
+                <p class="desc_txt">Don't just memorize—solve. Put your skills to the test with our interactive coding challenges. Build a portfolio of real projects and prove your abilities to yourself (and future employers).</p>
+            </section>
+        </main>
+    </body>
+
+</html>
+
+<!-- TIME: 38 MINUTES, 22 MINUTES LEFT TO SPARE -->
